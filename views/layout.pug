@@ -1,0 +1,28 @@
+doctype html
+//- Name: Viet Nguyen
+//- Date: 04.18.2025
+//- CSC 372-01 
+//- 
+//- Description:
+//- This Pug file is part of a full-stack web application that displays jokes
+
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title JokeBook
+    link(rel='stylesheet', href='/style.css', type='text/css')
+    script(src='/script.js', defer)
+  body
+    header
+      h1 JokeBook
+      nav
+        ul
+          li
+            a(href='/jokebook/categories') Categories
+          li
+            a(href='/jokebook/random') Random Joke
+          li
+            a(href='/jokebook/joke') Add Joke
+    main
+      block layout-content

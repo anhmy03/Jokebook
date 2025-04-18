@@ -1,0 +1,9 @@
+extends layout.pug
+
+block layout-content
+  h2 Random Joke
+  if joke
+    p= joke.setup
+    p= joke.delivery
+  else
+    p No joke found.

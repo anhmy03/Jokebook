@@ -1,0 +1,10 @@
+//- categories.pug
+extends layout.pug
+
+block layout-content
+  h2 Categories
+  ul
+    each category in categories
+      
+      a(href=`/jokebook/joke/${category.name}`) #{category.name}
+      p

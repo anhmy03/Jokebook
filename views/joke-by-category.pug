@@ -1,0 +1,11 @@
+extends layout.pug
+
+block layout-content
+  h2 Jokes in Category: #{category}
+  ul#jokes-list
+    each joke in jokes
+      li
+        p= joke.setup
+        p= joke.delivery
+  
+        

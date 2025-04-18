@@ -1,0 +1,15 @@
+extends layout.pug
+
+block layout-content
+  h2 Add a New Joke
+  form(action='/jokebook/joke/add', method='POST')
+    label(for='category') Category:
+    input(type='text', id='category', name='category')
+
+    label(for='setup') Setup:
+    input(type='text', id='setup', name='setup')
+
+    label(for='delivery') Delivery:
+    input(type='text', id='delivery', name='delivery')
+
+    button(type='submit') Add Joke
